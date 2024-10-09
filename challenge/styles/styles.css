@@ -1,0 +1,53 @@
+body {
+    background-color: steelblue;
+}
+* {
+    border: 2px solid blue;
+}
+h1 {
+    color: white;
+    margin: 0 auto;
+    display: block;
+    width: 30%;
+    text-align: center;
+    font-family: helvetica, Arial, Helvetica, sans-serif;
+}
+h1:hover {
+    color: black;
+}
+.quote1 {
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    width: 60%;
+}
+.name {
+    color: white;
+    text-align: center;
+    font-family: helvetica, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+ol {
+    font-family: helvetica, Arial, Helvetica, sans-serif;
+    color: black;
+    font-weight: bold;
+    width: 60%;
+    margin: 0 auto;    
+}
+img {
+    width: 30%;
+    margin: 0 auto;
+    display: block;
+}
+.quote2 {
+    color: white;
+    font-size: 2em;
+    width: 55%;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.25;
+}
+footer p {
+    font-family: helvetica, Arial, Helvetica, sans-serif;
+    text-align: center;
+}
