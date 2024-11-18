@@ -3,6 +3,7 @@
     border: 2px solid black;
 }*/
 
+/* These apply to everything on both pages */
 body {
     padding: 0;
     margin: 0;
@@ -23,6 +24,8 @@ header {
     max-width: 1600px;
     margin: 0 auto;
 }
+
+/* Still both pages, but nav bar specific */
 #logo_link {
     justify-self: center;
     align-self: center;
@@ -45,7 +48,7 @@ nav a:hover {
     background-color: #003362;
     color: #ffb700;
 }
-
+/* This is the hero banner on home page */
 #hero {
     margin-top: -100px;
     display: grid;
@@ -79,6 +82,8 @@ nav a:hover {
     text-align: center;
 }
 
+/* This is the two buttons */
+
 .button-box {
     text-align: center;
 }
@@ -95,7 +100,7 @@ nav a:hover {
     background-color: #003362;
     color: #ffb700;
 }
-
+/* This is the three cards*/
 .home-grid {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
@@ -129,6 +134,7 @@ nav a:hover {
     opacity: .6;
     transform: scale(1.1);
 }
+/* This is the mountain pic with the background */
 main section {
     text-align: center;
 }
@@ -165,7 +171,7 @@ main section img {
     font-size: .8em;
     color: #fefefd;
 }
-
+/* footer starts here, applies to both pages */
 footer {
     display: flex;
     justify-content: space-around;
@@ -191,6 +197,104 @@ footer p a:hover {
 footer .social img {
     padding-top: 15px;
 }
+/* Here starts the questions page, first will be the heading, which I'm going to make the same color as the nav bar so it blends */
+ .questions-title {
+    text-align: center;
+    margin-top: 0;
+    padding: 80px;
+    font-family: "handlee", "lucida grande", sans-serif;
+    margin: 0;
+    letter-spacing: 3px;
+ }
+ /* This will be a background with a picture on the left and text on the right*/
+#dayonriver {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr 5fr .5fr;
+}
+#daybackground {
+    grid-column: 1/6;
+    grid-row: 1/3;
+    background-color: #16461a;
+ }
+ #dayonriver img {
+    grid-column: 1/4;
+    grid-row: 2/3;
+    width: 100%;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 60px;
+    align-self: center;
+ }
+ #dayonriver h3 {
+    align-self: auto;
+    grid-column: 2/5;
+    grid-row: 1/2;
+    color: #fefefd;
+    font-family: "handlee", "lucida grande", sans-serif;
+    letter-spacing: 2px;
+ }
+ #dayonriver p {
+    grid-column: 4/5;
+    grid-row: 2/3;
+    text-align: left;
+    color: #fefefd;
+    align-self: center;
+    padding-bottom: 60px;
+ }
+/* What's included section*/
+.included-title {
+    text-align: center;
+    margin-top: 100px;
+    color: #16461a;
+    font-family: "handlee", "lucida grande", sans-serif;
+    letter-spacing: 2px;
+}
+#included {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+#included h4 {
+    font-family: "handlee", "lucida grande", sans-serif;
+    border-bottom: 5px solid #16461a;
+    border-top: 5px solid #16461a;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-bottom: 0;
+    color: #16461a;
+    letter-spacing: 1px;
+}
+#included ul {
+    text-align: left;
+     justify-self: center;
+     color: black;
+     
+}
+
+/* FAQ section, was going to do collapsible sections, but it uses javascript*/
+.faq-title {
+    text-align: center;
+    background-color: #16461a;
+    color: #fefefd;
+    padding: 30px;
+    margin-top: 80px;
+    letter-spacing: 5px;
+}
+#faq h4 {
+    text-align: left;
+    font-family: "handlee", "lucida grande", sans-serif;
+    letter-spacing: 2px;
+    background-color: #16461a;
+    color: #fefefd;
+    padding: 10px;
+}
+#faq p {
+    font-weight: 500;
+    margin-right: 20px;
+    text-align: left;
+}
+
+
+/* These are the media quesries, they go at the bottom */
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;
