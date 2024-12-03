@@ -169,6 +169,9 @@ footer .logo_link {
 .mySlides {
   display: none;
 }
+.slideshow-container img {
+    vertical-align: middle;
+}
 
 /* Next & previous buttons */
 .prev, .next {
