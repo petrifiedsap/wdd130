@@ -43,7 +43,7 @@ header a {
     align-self: center;
     text-decoration: none;
 }
-.title {
+.title, .camp_title {
     padding-top: 40px;
     padding-bottom: 40px;
     text-align: center;
@@ -171,32 +171,57 @@ footer .logo_link {
     width: 100%;
 }
 
-#hale_info {
-    display: grid;
-}
-#hale_info h3 {
-    color: #f0f0f0;
+.camp_title {
     background-color: #003366;
+    color: #f0f0f0;
 }
-#hale_info img {
-    display: block;
-    margin: 0 auto;
-    width: 50%;
-    border: 5px solid black;
+.camp_name {
+    text-align: center;
+}
+#hale_info, #z_base, #philmont, #colorado {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#z_base, #philmont, #colorado {
+    border: 1em solid #a42212;
+    margin-bottom: 1em;
+}
+#hale_info h3, #z_base h3, #philmont h3, #colorado h3, #gulf_shores h3 {
+    grid-column: 1/2;
 }
 #hale_info p, #z_base p, #philmont p, #colorado p {
     text-align: center;
+    grid-column: 1/2;
     margin: 2em 4em;
 }
-#z_base h3, #philmont h3, #colorado h3, #gulf_shores h3 {
-    color: #f0f0f0;
-    background-color: #003366;
-}
-#philmont img, #colorado img {
-    width: 49%;
+
+#hale_info img {
+    width: 100%;
     border: 5px solid black;
+    box-sizing: border-box;
+    justify-self: center;
+    align-self: center;
+    grid-column: 2/3;
+    grid-row: 1/3;
 }
 
+
+#philmont img, #colorado img {
+    width: 80%;
+    border: 5px solid black;
+    grid-column: 2/3;
+}
+#pgroup, #cgroup {
+    grid-row: 1/3;
+}
+#trail, #zip {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    justify-self: right;
+    align-self: self-end;
+    background-color: rgba(0,0,0,0);
+    border: none;
+}
 
 
 
