@@ -311,7 +311,67 @@ footer .logo_link {
   animation-name: fade;
   animation-duration: 1.5s;
 }
+/*slideshow also includes query at bottom, but this is the end of the other code*/
 
+/* this is the start of the mulch page CSS*/
+#mulch_grid {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    margin-bottom: 50px;
+}
+#why_border {
+    border: 1em solid #a42212;
+    grid-column: 1/6;
+    grid-row: 1/2;
+}
+#description {
+    grid-column: 1/4;
+    grid-row: 1/2;
+    text-align: center;
+    padding: 2em;
+    align-self: center;
+}
+#garden {
+    grid-column: 4/6;
+    grid-row: 1/2;
+    width: 100%;
+    padding: 2em;
+    justify-self: center;
+    align-self: center;
+}
+#need {
+    grid-column: 1/6;
+}
+#how_much {
+    grid-column: 1/6;
+    text-align: center;
+    align-self: center;
+    padding-left: 2em;
+    padding-right: 2em;
+
+}
+#area {
+    grid-column: 1/3;
+    width: 100%;
+    grid-row: 4/6;
+    justify-self: center;
+    align-self: center;
+}
+#use_calculator {
+    grid-column: 3/6;
+    align-self: center;
+    padding-right: 2em;
+}
+#calculator_button {
+    grid-column: 3/6;
+    justify-self: center;
+    align-self: center;
+    color: #f0f0f0;
+    background-color: #003366;
+    text-decoration: none;
+    padding: 2em;
+}
+/*media queries, stay at bottom */
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
